@@ -8,10 +8,28 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style>
+      body {
+        background-image: url('bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+      }
+      .jumbo {
+        margin-bottom: 0;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <main role="main" class="container">
-      <div class="jumbotron">
+    <main role="main" class="container wrapper">
+      <div class="jumbotron jumbo">
         <h1 id="day"></h1>
         <p class="lead">have passed since the app release and we still don't have our toys >:C</p>
       </div>
@@ -35,7 +53,7 @@
         return Math.floor(days);
       }
 
-      $('#day').text(showDays(Date.now(), '2.26.2018') + ' days');
+      $('#day').text(showDays(Date.now(), '2.26.2018') + ' DAYS');
     </script>
   </body>
 </html>
